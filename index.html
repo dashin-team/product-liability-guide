@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="產品責任險自學筆記：基本概念、法律依據、保單條款、可查證真實案例、推薦話術與投保前問卷。給保險業務員使用的學習與對客說明頁。">
+<meta name="theme-color" content="#1d4e89">
+<title>產品責任險自學筆記</title>
+<meta property="og:title" content="產品責任險自學筆記">
+<meta property="og:description" content="給富邦業務員用的繁體中文學習頁：基本概念、法律依據、保單關鍵條款、保費影響因素、可查證真實案例，以及推薦話術與投保前問卷。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_TW">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d4e89'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-size='32' fill='white' font-family='sans-serif'%3E責%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#f6f3ee; --card:#fff; --ink:#1f2a37; --muted:#5b6675; --line:#e4ddd2;
+  --pri:#1d4e89; --pri2:#2f6db5; --teal:#1f8a83; --warm:#c9773a;
+  --soft:#eef4fb; --softw:#fbf1e7; --softe:#fdecec;
+  --ok:#2e7d4f; --warn:#b4532a; --r:16px; --sh:0 2px 10px rgba(31,42,55,.07);
+  --nav-h:56px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans TC",-apple-system,BlinkMacSystemFont,"PingFang TC","Microsoft JhengHei","Heiti TC",sans-serif;font-size:16px;line-height:1.7}
+a{color:var(--pri2)}
+a:hover{color:var(--pri)}
+.wrap{max-width:880px;margin:0 auto;padding:0 16px}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:8px 12px;z-index:99}
+.skip:focus{left:12px;top:12px}
+header.hero{background:linear-gradient(160deg,#173f70 0%,#1d4e89 55%,#2a7a8c 100%);color:#fff;padding:40px 0 32px;border-radius:0 0 28px 28px}
+.hero .tag{display:inline-block;font-size:13px;background:rgba(255,255,255,.16);padding:4px 12px;border-radius:999px;letter-spacing:.05em}
+.hero h1{font-size:clamp(26px,6vw,34px);line-height:1.3;margin:14px 0 10px;letter-spacing:.02em;font-weight:800}
+.hero p{margin:0;opacity:.94;max-width:40em}
+.hero .meta{margin-top:16px;font-size:13px;opacity:.85}
+nav.toc{position:sticky;top:0;z-index:30;background:rgba(246,243,238,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav.toc .wrap{display:flex;gap:8px;overflow-x:auto;padding:8px 16px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+nav.toc .wrap::-webkit-scrollbar{display:none}
+nav.toc a{flex:0 0 auto;min-height:44px;display:flex;align-items:center;padding:0 14px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--ink);text-decoration:none;font-size:14px;white-space:nowrap}
+nav.toc a.on, nav.toc a[aria-current="true"]{background:var(--pri);color:#fff;border-color:var(--pri)}
+section{padding:32px 0 8px;scroll-margin-top:calc(var(--nav-h) + 8px)}
+h2{font-size:22px;margin:0 0 6px;display:flex;align-items:center;gap:10px;line-height:1.35}
+h2 .no{flex:0 0 auto;width:32px;height:32px;border-radius:10px;background:var(--pri);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:15px;font-weight:700}
+.lead{color:var(--muted);margin:0 0 16px;font-size:15px}
+h3{font-size:18px;margin:22px 0 8px}
+p{margin:0 0 12px}
+.card{background:var(--card);border-radius:var(--r);box-shadow:var(--sh);padding:16px 16px 14px;margin:0 0 12px;border:1px solid #eee8de}
+.callout{border-radius:var(--r);padding:14px 16px;margin:0 0 16px;border:1px solid #d9e6f5;background:var(--soft)}
+.callout.warn{background:var(--softw);border-color:#f0d8c0}
+.callout .k{font-weight:700;margin:0 0 4px;color:var(--pri)}
+.callout.warn .k{color:var(--warn)}
+.props{margin:0;padding:0;list-style:none}
+.props li{display:grid;grid-template-columns:7.5em 1fr;gap:8px 12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.props li:last-child{border-bottom:0}
+.props dt,.props .lab{font-weight:700;color:var(--pri);font-size:14px}
+.props dd,.props .val{margin:0}
+ol.clean, ul.clean{margin:0 0 14px;padding:0 0 0 1.2em}
+ol.clean li, ul.clean li{margin:0 0 8px}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 16px;border:1px solid #eee8de;border-radius:var(--r);background:#fff;box-shadow:var(--sh)}
+table{width:100%;border-collapse:collapse;font-size:14.5px;min-width:520px}
+th,td{padding:10px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{background:var(--soft);color:var(--pri);font-weight:700;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+.links{display:grid;gap:8px;margin:0 0 16px}
+.links a{display:block;background:#fff;border:1px solid #eee8de;border-radius:12px;padding:12px 14px;text-decoration:none;color:var(--ink);box-shadow:var(--sh)}
+.links a:hover{border-color:#c9d8ee}
+.links .t{font-weight:700;color:var(--pri)}
+.links .s{font-size:13px;color:var(--muted);margin-top:2px}
+details.fold{background:#fff;border-radius:var(--r);box-shadow:var(--sh);border:1px solid #eee8de;margin:0 0 8px;overflow:hidden}
+details.fold summary{list-style:none;cursor:pointer;min-height:56px;padding:12px 44px 12px 14px;position:relative;display:grid;gap:2px;align-content:center}
+details.fold summary::-webkit-details-marker{display:none}
+details.fold summary:after{content:"＋";position:absolute;right:16px;top:50%;transform:translateY(-50%);color:var(--pri2);font-size:20px;font-weight:500}
+details.fold[open] summary:after{content:"－"}
+details.fold .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:999px;background:var(--soft);color:var(--pri);font-weight:700;width:fit-content;margin-bottom:2px}
+details.fold .ttl{font-weight:700;line-height:1.4}
+details.fold .body{padding:0 14px 16px;border-top:1px solid var(--line)}
+details.fold .body p:first-child{margin-top:12px}
+details.fold .src{font-size:13px;color:var(--muted);margin:8px 0 0}
+blockquote.quote{margin:0 0 16px;padding:14px 16px;background:#fff;border-left:4px solid var(--teal);border-radius:0 14px 14px 0;box-shadow:var(--sh);color:#2a3644}
+blockquote.quote .who{display:block;font-size:13px;color:var(--muted);font-weight:700;margin:0 0 6px}
+.steps{counter-reset:step;margin:0 0 16px;padding:0;list-style:none}
+.steps li{display:grid;grid-template-columns:36px 1fr;gap:10px;align-items:start;background:#fff;border:1px solid #eee8de;border-radius:var(--r);padding:12px 14px;margin:0 0 8px;box-shadow:var(--sh)}
+.steps li:before{counter-increment:step;content:counter(step);width:28px;height:28px;border-radius:8px;background:var(--pri);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;margin-top:2px}
+.steps .st{font-weight:700;margin:0 0 2px}
+.steps .sd{margin:0;color:var(--muted);font-size:14.5px}
+footer{padding:28px 0 48px;color:var(--muted);font-size:13px}
+footer .card{background:#fff}
+@media(max-width:700px){
+  .props li{grid-template-columns:1fr}
+  .props .lab{margin-bottom:-4px}
+  table.stack{min-width:0}
+  table.stack thead{display:none}
+  table.stack, table.stack tbody, table.stack tr, table.stack td{display:block;width:100%}
+  table.stack tr{padding:10px 12px;border-bottom:1px solid var(--line)}
+  table.stack tr:last-child{border-bottom:0}
+  table.stack td{padding:4px 0;border:0;display:grid;grid-template-columns:7.2em 1fr;gap:8px}
+  table.stack td:before{content:attr(data-label);font-weight:700;color:var(--pri);font-size:13px}
+}
+@media print{
+  nav.toc{display:none}
+  details.fold{break-inside:avoid}
+  details.fold:not([open]){border:0;box-shadow:none}
+  a[href^="http"]::after{content:" (" attr(href) ")";font-size:11px;color:#555}
+  header.hero{border-radius:0;print-color-adjust:exact;-webkit-print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="hero">
+  <div class="wrap">
+    <span class="tag">業務員自學筆記</span>
+    <h1>產品責任險自學筆記</h1>
+    <p>給富邦業務員用的學習與對客說明頁：基本概念、法律依據、保單關鍵條款、保費影響因素、可查證真實案例，以及推薦話術與投保前問卷。</p>
+    <div class="meta">資料整理至 2026 年 11 月 18 日（臺灣時間，Asia/Taipei）</div>
+  </div>
+</header>
+<nav class="toc" aria-label="章節導覽">
+  <div class="wrap">
+    <a href="#overview">30 秒搞懂</a>
+    <a href="#basics">基本概念</a>
+    <a href="#compare">險種比較</a>
+    <a href="#law">法律依據</a>
+    <a href="#mandatory">誰必須保</a>
+    <a href="#policy">關鍵條款</a>
+    <a href="#premium">保費怎麼算</a>
+    <a href="#cases">真實案例</a>
+    <a href="#sales">業務實戰</a>
+    <a href="#sources">出處與備註</a>
+  </div>
+</nav>
+<main id="main" class="wrap">
+
+  <div class="callout" style="margin-top:24px">
+    <p class="k">怎麼用這一頁</p>
+    <p style="margin:0">這是給自己學、也可用來向客戶講的整理筆記，不是官方費率表或核保手冊。實際承保、保費與理賠，以當年保單條款、批單、要保書及公司核保為準。法規若有修正，請以全國法規資料庫與主管機關最新公告為準。</p>
+  </div>
+
+  <section id="overview">
+    <h2><span class="no">1</span>30 秒搞懂</h2>
+    <p>產品責任險保的，是因產品缺陷，造成第三人體傷、死亡或財物損失，被保險人依法應負的賠償責任。它不保產品本身壞掉、退換貨或回收費用。</p>
+    <ol class="clean">
+      <li>誰會被請求：製造商、輸入商、經銷商、品牌商、餐飲業都可能要賠；消費者可對產銷鏈上的企業經營者連帶求償。</li>
+      <li>為什麼嚴：消費者保護法第 7 條對製造、設計者採「無過失責任」——能證明無過失，法院只能減輕，不能一定免除。</li>
+      <li>誰必須保：符合規模的食品製造、加工、輸入及餐飲業者，依食品安全衛生管理法第 13 條應投保，且有最低保額。化粧品目前未見同等強制規定。</li>
+      <li>跟客戶講時的句型：「產品壞了要退換，這張不賠；產品傷到人或燒掉別人家，這張才賠。」</li>
+    </ol>
+  </section>
+
+  <section id="basics">
+    <h2><span class="no">2</span>基本概念</h2>
+    <h3>什麼是產品責任險</h3>
+    <p>依金管會示範條款與富邦產險公開商品說明，本險承保：被保險人因被保險產品之缺陷，在保險期間內或「追溯日」之後發生意外事故，致第三人遭受身體傷害或財物損失，依法應由被保險人負損害賠償責任，且在保險期間內受賠償請求時，保險公司在保險金額範圍內負賠償之責。</p>
+    <div class="card">
+      <ul class="props">
+        <li><span class="lab">被保險產品</span><span class="val">載明於保單，由被保險人設計、生產、飼養、製造、裝配、改裝、分裝、加工、處理、採購、經銷或輸入的產品，含包裝及容器</span></li>
+        <li><span class="lab">產品缺陷</span><span class="val">未達合理之安全期待，具有瑕疵、缺點，或具不可預料之傷害、毒害性質，足以導致第三人體傷或財損</span></li>
+        <li><span class="lab">缺陷常見來源</span><span class="val">設計錯誤、製造錯誤、使用說明或警示標示不當</span></li>
+        <li><span class="lab">身體傷害</span><span class="val">體傷、疾病及因而導致的死亡</span></li>
+        <li><span class="lab">財物損失</span><span class="val">有形財產的毀損或滅失，並包括因而不能使用的損失</span></li>
+      </ul>
+    </div>
+
+    <h3>保障對象</h3>
+    <p>依富邦產險公開說明，典型對象包括：</p>
+    <div class="card">
+      <ul class="props">
+        <li><span class="lab">上游</span><span class="val">設計、生產、製造廠商</span></li>
+        <li><span class="lab">下游</span><span class="val">組裝、改裝、裝配、分裝、加工、處理廠商</span></li>
+        <li><span class="lab">流通環節</span><span class="val">經銷商、代理商、進出口商、品牌商、銷售商</span></li>
+        <li><span class="lab">食品與餐飲</span><span class="val">符合規模者屬法定應投保對象；餐廳供應食物致中毒，也屬產品責任風險</span></li>
+      </ul>
+    </div>
+    <div class="callout warn">
+      <p class="k">只賣不製，就沒有責任嗎？</p>
+      <p style="margin:0">不一定。消保法第 8 條規定經銷商與製造者連帶負責；第 9 條規定輸入業者視為製造者，負無過失責任。電商賣家、代購、直播帶貨，只要涉及經銷或輸入，就可能被一併請求。不過，「只販賣、無製造或輸入」的食品零售商，目前不屬食安法強制投保對象。</p>
+    </div>
+
+    <h3>承保範圍與不保事項</h3>
+    <p>承保的是依法應負的第三人體傷、死亡或財損；通常也可經約定或附加條款處理訴訟、和解費用。下列不保事項依金管會示範條款及富邦 105 年備查條款整理，實際以當件保單為準。</p>
+    <div class="table-wrap">
+      <table class="stack">
+        <thead><tr><th>種類</th><th>典型內容</th></tr></thead>
+        <tbody>
+          <tr><td data-label="種類">契約責任</td><td data-label="典型內容">以契約或協議承受、超過法定責任的部分；拋棄追償權致不能追償</td></tr>
+          <tr><td data-label="種類">產品本身與回收</td><td data-label="典型內容">產品本身損失；檢查、鑑定、修理、清除、拆除、替換、收回費用及退還價款</td></tr>
+          <tr><td data-label="種類">功能不符預期</td><td data-label="典型內容">產品未達預期功能、使用不當，或提供錯誤產品</td></tr>
+          <tr><td data-label="種類">尚在自己控制下</td><td data-label="典型內容">產品尚在被保險人、代理人、經銷商或受僱人管理中發生的事故</td></tr>
+          <tr><td data-label="種類">故意與明知缺陷</td><td data-label="典型內容">故意、刑事不法、故意違反正常製作程序；出售時已知有缺陷仍交貨</td></tr>
+          <tr><td data-label="種類">自有財產與零件損失</td><td data-label="典型內容">被保險人自有、管理或控制的財產；產品作為他物材料、零件致他物本身損失</td></tr>
+          <tr><td data-label="種類">受僱人職災</td><td data-label="典型內容">受僱人因執行職務受傷（應由雇主責任險處理）</td></tr>
+          <tr><td data-label="種類">地區與準據法</td><td data-label="典型內容">在約定地區以外發生，或依約定以外法律為準據法的請求</td></tr>
+          <tr><td data-label="種類">其他常見除外</td><td data-label="典型內容">戰爭、罷工暴動、地震颱風洪水等天災、核輻射與污染；罰金、罰鍰、懲罰性賠償金、違約金（但經書面約定加保者不在此限）</td></tr>
+          <tr><td data-label="種類">交付滿 10 年</td><td data-label="典型內容">產品交付買受人已屆滿 10 年者，但經書面約定加保者不在此限</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>另外，石綿、多氯聯苯、煙草及其製品等高風險產品或成分，示範條款列為原則不保，須書面加保才可能承保。</p>
+  </section>
+
+  <section id="compare">
+    <h2><span class="no">3</span>與相關險種比較</h2>
+    <p class="lead">「商品責任險」在市場上多數時候就是產品責任險的另稱；請以保單條款為準，不要只看名稱。</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>比較項目</th><th>產品責任險</th><th>公共意外責任險</th><th>產品回收險</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>主要保什麼</td><td>產品缺陷致第三人體傷、死亡或財損的法律賠償責任</td><td>營業場所或活動中，因場所、設施或業務行為致第三人意外</td><td>召回、下架、運輸、銷毀、替換或退還成本價等回收費用</td></tr>
+          <tr><td>典型事故</td><td>食物中毒、電器起火、化粧品致敏、玩具傷童</td><td>顧客在店裡滑倒、招牌掉落、樓梯失足</td><td>發現批次缺陷後，主動召回市面商品</td></tr>
+          <tr><td>通常不賠</td><td>產品本身損失、退貨、回收費用；懲罰性賠償金常須另約</td><td>出售或供應的商品致害；員工職災</td><td>不代賠對消費者的體傷或財損賠償</td></tr>
+          <tr><td>誰最需要</td><td>製造、進口、品牌、經銷、食品與餐飲業</td><td>有實體營業場所的店家、場館、活動主辦</td><td>有大規模召回風險的品牌或製造商</td></tr>
+          <tr><td>是否強制</td><td>符合規模之食品業者強制；其他行業以法令、契約或通路要求為主</td><td>許多縣市對指定場所有最低保額</td><td>非強制；市場加保比例較低</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout warn">
+      <p class="k">餐飲業常見誤解</p>
+      <p style="margin:0">客人在店裡跌倒，走公共意外責任險；吃了店家食物中毒，原則上是產品責任。部分公責險可附加「食物中毒條款」，但外帶回家後中毒，常不在公責險的場所範圍內。衛福部官方 QA 說，若已投保公責險且內容已符合食品業者產品責任險規定，可不必重複投保——業務上要逐張核對條款與保額，不要口頭保證「有公責就沒事」。</p>
+    </div>
+    <p>金管會 2026 年 7 月就中聯油品案說明：全台約 16 家產險承保產品責任險，但要產品對人體造成損失才能啟動理賠；民眾退貨屬除外事項。回收成本須另投產品回收險，或加保回收、修復、替換或退還費用附加條款。</p>
+  </section>
+
+  <section id="law">
+    <h2><span class="no">4</span>法律依據</h2>
+    <p class="lead">條文據全國法規資料庫；個案責任由法院依事實認定。</p>
+    <div class="card">
+      <ul class="props">
+        <li><span class="lab">消保法第 7 條</span><span class="val">設計、生產、製造商品或提供服務者，應確保商品或服務符合「當時科技或專業水準可合理期待之安全性」；具危害可能者應為警告標示及緊急處理危險之方法。違反致消費者或第三人受害，負連帶賠償責任。但能證明無過失者，法院得減輕其賠償責任。這就是常說的「無過失責任」：減輕不等於免除。</span></li>
+        <li><span class="lab">消保法第 7 條之 1</span><span class="val">商品是否符合當時科技或專業水準可合理期待之安全性，由企業經營者負舉證責任。</span></li>
+        <li><span class="lab">消保法第 8 條</span><span class="val">經銷商就商品或服務所生損害，與設計、生產、製造者連帶負賠償責任。但經銷商對損害之防免已盡相當注意，或縱加以相當注意而仍不免發生損害者，不在此限。改裝、分裝者，視為第 7 條之企業經營者。</span></li>
+        <li><span class="lab">消保法第 9 條</span><span class="val">輸入商品或服務者，視為設計、生產、製造者，負第 7 條之製造者責任。進口商不能只說「是國外原廠的問題」。</span></li>
+        <li><span class="lab">消保法第 51 條</span><span class="val">懲罰性賠償金：故意致害得請求損害額 5 倍以下，重大過失 3 倍以下，過失 1 倍以下。注意：第 7 條的無過失賠償，不等於自動成立第 51 條；請求懲罰性賠償，消費者仍須證明故意或過失。示範保單多將懲罰性賠償金列為除外，除非書面加保。</span></li>
+        <li><span class="lab">民法第 191 條之 1</span><span class="val">商品製造人對商品通常使用或消費致他人之損害負賠償責任。但能證明生產、製造、加工、設計並無欠缺，或損害非因該欠缺所致，或對防止損害發生已盡相當注意者，不在此限。這是推定過失責任，與消保法第 7 條的無過失責任並存。輸入業者與製造人負同一責任。</span></li>
+      </ul>
+    </div>
+    <p>跟客戶講法時可用這句：「只要商品進入市場，就要符合合理期待的安全性。消費者不用先證明你有過失；你要證明商品是安全的。就算你已經很小心，也不一定完全不用賠。」</p>
+  </section>
+
+  <section id="mandatory">
+    <h2><span class="no">5</span>誰必須投保</h2>
+    <p class="lead">以食藥署 110 年 9 月 28 日衛授食字第 1101302156 號公告（依食安法第 13 條）為準，本頁整理時未見更新的替代公告。</p>
+    <p>經中央主管機關公告類別及規模之食品業者，應投保產品責任保險。應事先完成投保，保存保險文件並維持保單有效。</p>
+    <div class="table-wrap">
+      <table class="stack">
+        <thead><tr><th>業別</th><th>應投保規模</th></tr></thead>
+        <tbody>
+          <tr><td data-label="業別">製造、加工或調配業</td><td data-label="應投保規模">具商業登記、公司登記、工廠登記、稅籍登記或農產品初級加工場登記者</td></tr>
+          <tr><td data-label="業別">輸入業</td><td data-label="應投保規模">具商業登記、公司登記、工廠登記或稅籍登記者</td></tr>
+          <tr><td data-label="業別">餐飲業</td><td data-label="應投保規模">具商業登記、公司登記或工廠登記者</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>委託製造、加工或調配者，優先以委託者為投保人；但雙方另以契約約定者，不在此限。</p>
+    <div class="table-wrap">
+      <table class="stack">
+        <thead><tr><th>最低保險金額</th><th>金額</th></tr></thead>
+        <tbody>
+          <tr><td data-label="項目">每一個人身體傷害</td><td data-label="金額">新臺幣 100 萬元</td></tr>
+          <tr><td data-label="項目">每一意外事故身體傷害</td><td data-label="金額">新臺幣 400 萬元</td></tr>
+          <tr><td data-label="項目">每一意外事故財物損失</td><td data-label="金額">新臺幣 0 元（官方 QA：這一項目不設最低金額）</td></tr>
+          <tr><td data-label="項目">保險期間內累計</td><td data-label="金額">新臺幣 1,000 萬元</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout warn">
+      <p class="k">未依規投保的罰則</p>
+      <p style="margin:0">食品安全衛生管理法第 47 條第 5 款：處新臺幣 3 萬元以上、300 萬元以下罰鍰；情節重大者，並得命其歇業、停業一定期間，或廢止公司、商業、工廠登記或食品業者登錄。</p>
+    </div>
+    <ul class="clean">
+      <li>最低保額只保障體傷，不等於財損也自動足額。食品業若擔心財物損失（例如污染他人貨物），應另議加保財損額度。</li>
+      <li>強制保額是底線，不是「保這個額就一定夠」。重大傷亡案件的賠償，常遠高於每人 100 萬、累計 1,000 萬。</li>
+      <li>只販賣、無製造或輸入行為者，官方 QA 明定尚非強制對象；但仍可能依消保法被求償，建議依風險自願投保。</li>
+      <li>酒精濃度 0.5%以上屬酒類，依菸酒管理法管理，非食安法強制投保範圍。</li>
+      <li>跨國企業如已投保跨國保險且符合本保險規定，無須在台灣重複投保；但須確認保額、地區與範圍真的符合公告。</li>
+    </ul>
+    <h3>化粧品等其他產業</h3>
+    <p>經查閱中華民國 107 年 5 月 2 日修正公布之《化粧品衛生安全管理法》，法條規範產品登錄、產品資訊檔案、標示、不良反應通報及回收等義務，但未見類似食安法第 13 條「應投保產品責任保險」的強制規定。化粧品、兒童用品、電器、保健食品仍屬高風險產品，極力建議自願投保；若法規改變，請再對照主管機關公告。</p>
+  </section>
+
+  <section id="policy">
+    <h2><span class="no">6</span>保單關鍵條款</h2>
+    <h3>四個保額要看懂</h3>
+    <div class="card">
+      <ul class="props">
+        <li><span class="lab">每一個人體傷</span><span class="val">任何一次意外事故中，對每一個人體傷的最高賠償限額</span></li>
+        <li><span class="lab">每一事故體傷</span><span class="val">同一次事故傷亡人數超過一人時，對所有體傷的最高限額，且仍受「每一個人體傷」限制</span></li>
+        <li><span class="lab">每一事故財損</span><span class="val">同一次事故內，對所有財物損失的最高限額</span></li>
+        <li><span class="lab">保險期間累計</span><span class="val">整段保險期間內，多次賠償請求的累積最高限額；賠足累計額度時，保單即失效</span></li>
+      </ul>
+    </div>
+    <p>示範條款對「一次意外事故」有特殊定義：以保險期間內第一次賠償請求為準，且在第一次請求後 12 個月內，基於同一缺陷的請求，視為同時請求、算一次事故。同一事故若同時有體傷與財損，還受「每一事故體傷及財損」總限額約束。</p>
+    <h3>自負額</h3>
+    <p>被保險人對每一意外事故賠款，須先自行負擔約定的自負額；保險公司僅對超過自負額的部分負責。食品強制投保的自負額，由要保人與保險人逐案議定。自負額越高，保費通常越低，但客戶要有能力自行吸收小額賠款。</p>
+    <h3>索賠基礎（claims-made）與事故發生基礎（occurrence）</h3>
+    <p>台灣產品責任險示範條款（含富邦備查條款）採取的是帶追溯日的「賠償請求制」：意外事故須發生在保險期間內或追溯日之後，且被保險人須在保險期間內受到賠償請求。追溯日以前已發生的事故，或不在保險期間內受到的請求，保險公司不負責。</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>項目</th><th>賠償請求制 claims-made</th><th>事故發生制 occurrence</th></tr></thead>
+        <tbody>
+          <tr><td>觸發理賠的關鍵</td><td>事故時點加請求時點都要符合</td><td>以事故發生在保單期間為主；請求可能落在期滿之後</td></tr>
+          <tr><td>追溯日</td><td>非常重要；換保時應力求與舊保單銜接、保持連續</td><td>通常不代表追溯保障</td></tr>
+          <tr><td>斷保風險</td><td>期滿未續或追溯日後移，容易出現保障空白</td><td>保單期間內發生的事故，期滿後仍可能可請求</td></tr>
+          <tr><td>台灣市場常態</td><td>示範條款與多數產品責任險採此制</td><td>較常見於部分國際單或其他責任險種類</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout">
+      <p class="k">換保或續保時要問的第一件事</p>
+      <p style="margin:0">追溯日能否與舊保單銜接？若新保單把追溯日改成今天，今天以前已發生、今天以後才被請求的事故，就可能都賠不到。切勿讓保單中間中斷。</p>
+    </div>
+    <h3>承保地區與出口廠商要點</h3>
+    <ol class="clean">
+      <li>地區限制與準據法限制是兩件事：事故或請求發生在哪裡，以及依哪一國法律請求。往美加出貨，通常要明確約定「世界各地（含美加）」。</li>
+      <li>美加因陪審團制、高額精神慰撫金及懲罰性賠償，風險與保費都高得多。懲罰性賠償金在示範條款原則不保，除非書面加保。</li>
+      <li>買家合約常要求特定保額、將買家列為附加被保險人，或提供符合信評要求的證明。富邦產險外銷產品責任保險專區有公開說明可配合此類需求。</li>
+      <li>交付買受人屆滿 10 年的事故，示範條款原則不保，耗材、家電等使用較長的產品要特別注意。</li>
+      <li>承保地區、銷售金額、產品明細要據實告知。實際銷往美加卻只保「國內」，是常見理賠爭議點。</li>
+    </ol>
+  </section>
+
+  <section id="premium">
+    <h2><span class="no">7</span>保費怎麼算</h2>
+    <p class="lead">保費依產品風險與實際情況逐案議定，本頁不撰造費率或年繳起跳金額。</p>
+    <p>示範條款第 8 條明定：保險費依保險期間內「預計銷售總金額」預收；期滿後 30 日內，被保險人應將實際銷售總金額以書面通知公司，再結算實際保費。實收不得低於保單所載最低保險費。</p>
+    <ol class="clean">
+      <li>產品類別與風險：食品、兒童用品、電器、保健品、化粧品通常高於一般日用紙品或服飾。</li>
+      <li>營業額或預計銷售金額：越高越影響保費基數。</li>
+      <li>銷售地區：國內、世界（不含美加）、世界（含美加）差異很大。</li>
+      <li>保額與自負額：保額越高保費越高；自負額越高保費通常越低。</li>
+      <li>理賠紀錄、品質管理、認證及過往召回紀錄。</li>
+      <li>是否要求加保訴訟費用、懲罰性賠償、美加地區或回收費用附加條款。</li>
+    </ol>
+    <h3>富邦產險公開商品資訊</h3>
+    <p>富邦產險官網設有「內銷產品責任保險」與「外銷產品責任保險」專區，可直接給客戶看商品定位。公開頁面未刊載費率。條款可對照金管會示範條款。本次未在富邦產險官網查得可直接下載的官方要保書檔，操作時請使用公司當年最新要保書與詢問表。</p>
+    <div class="links">
+      <a href="https://www.fubon.com/insurance/b2c/content/commercial_prod_aml/index.html" target="_blank" rel="noopener"><span class="t">富邦產險內銷產品責任保險專區</span><span class="s">富邦產險</span></a>
+      <a href="https://www.fubon.com/insurance/b2c/content/commercial_prod_apd/index.html" target="_blank" rel="noopener"><span class="t">富邦產險外銷產品責任保險專區</span><span class="s">富邦產險</span></a>
+      <a href="https://law.fsc.gov.tw/LawContent.aspx?id=FL040736" target="_blank" rel="noopener"><span class="t">產品責任保險保單條款（示範條款）</span><span class="s">金融監督管理委員會</span></a>
+    </div>
+  </section>
+
+  <section id="cases">
+    <h2><span class="no">8</span>真實案例</h2>
+    <p class="lead">以台灣可查證案例為主，並加 2 則國際知名案例。僅撰寫出處明載的事實；部分判決當時仍得上訴，不代表最終確定。點開卡片可看完整說明與來源連結。</p>
+
+    <details class="fold">
+      <summary><span class="tag">食品中毒</span><span class="ttl">寶林茶室：粿條污染致 6 死 27 傷，保險理賠成為民事和解主要來源</span></summary>
+      <div class="body">
+        <p>113 年 3 月，信義 A13 店 33 人食用以粿條製作的餐點後檢出邦克列酸，其中 6 人死亡、27 人受傷。臺北地院 115 年 11 月 12 日刑事一審宣判，認定拆封後粿條跨日常溫保存、混裝及重複使用塑膠袋與傷亡有因果關係，創辦人等 4 人判處過失致死刑；店長部分無罪、部分公訴不受理。法院明示，部分消費爭議調解金，係由台灣大食代餐飲、遠東百貨信義分公司各自投保的保險公司依契約給付，並非被告個人財產支付。臺北市政府指出，消基會團體訴訟的 31 人中，已有 22 人和解獲償（含 8 名傷者及 14 名亡者家屬），另 9 名傷者仍在訴訟中。</p>
+        <p>教戰意義：餐飲業的食物中毒是典型產品責任；保險能支撐民事賠償，但不能取代刑事責任，也不一定覆蓋全部傷亡賠償。和解金額未見全數公開。</p>
+        <p class="src">司法院／臺灣臺北地方法院 114 年度訴字第 333 號新聞稿，115 年 11 月 12 日宣判；臺北市政府新聞稿</p>
+        <div class="links">
+          <a href="https://www.judicial.gov.tw/tw/cp-1888-1648027-d7973-1.html" target="_blank" rel="noopener"><span class="t">寶林茶室案刑事一審宣判新聞稿</span><span class="s">司法院　2026-11-12</span></a>
+          <a href="https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=926E6FDA10E57BE6" target="_blank" rel="noopener"><span class="t">北市府：已協助受害者求償、部分和解獲償</span><span class="s">臺北市政府</span></a>
+        </div>
+      </div>
+    </details>
+
+    <details class="fold">
+      <summary><span class="tag">行動電源</span><span class="ttl">行動電源充電中爆裂致火災，高院二審判廠商賠 92 萬餘元</span></summary>
+      <div class="body">
+        <p>消費者於 107 年 2 月購買迪士達電子有限公司生產的行動電源，同年 11 月 23 日凌晨充電時爆裂引發租屋火災，造成灼傷及財物損失。消費者依消保法及民法求償約 295 萬餘元。一審新北地院判賠 81 萬餘元；臺灣高等法院 110 年 9 月 22 日二審認定，火災係因行動電源內部故障，鋰電池爆開燃燒，且事發時係合於通常使用方式；保固 1 年卻僅使用 9 個月餘即故障釀災，不符合當時科技及專業水準可合理期待的安全性，改判廠商賠醫療費、房屋修繕費、家具家電損失及非財產上損害等合計 92 萬 2,614 元。中央社當時報導全案仍可上訴。</p>
+        <p>教戰意義：行動電源、充電設備是典型高風險產品；一次起火可同時造成體傷與財損。</p>
+        <p class="src">中央社 2021 年 9 月 22 日</p>
+        <div class="links">
+          <a href="https://www.cna.com.tw/news/asoc/202109220119.aspx" target="_blank" rel="noopener"><span class="t">行動電源充電爆裂致火災 二審判廠商賠 92 萬元</span><span class="s">中央社　2021-09-22</span></a>
+        </div>
+      </div>
+    </details>
+
+    <details class="fold">
+      <summary><span class="tag">家電起火</span><span class="ttl">東元除濕機自燃，士林地院依消保法第 7 條判賠 68 萬餘元</span></summary>
+      <div class="body">
+        <p>萬姓消費者於 113 年 11 月 2 日出門前，將東元電機製造的 MD-1214B 除濕機留在臥室運轉，返家後發現火災。消防調查認定起火物為該除濕機。原告依消保法第 7 條及第 51 條等請求約 159 萬餘元（含 1 倍懲罰性賠償）。被告主張約為 94 至 95 年間製造、使用逾 10 年應換機，且出門應拔掉插頭。士林地院 115 年 6 月 24 日判決：除濕機設計上具自動運作功能，消費者出門時讓機器繼續運轉仍屬通常使用；被告未證明產品符合可合理期待安全性，應依消保法第 7 條負賠償責任，金額 68 萬 7,313 元。法院並認定，第 51 條懲罰性賠償須另外證明故意或過失，不能僅因第 7 條成立就當然判給，故駁回這一部分。</p>
+        <p>教戰意義：「用了好幾年」不等於廠商沒責任；懲罰性賠償金要另證，且保單多列為除外。</p>
+        <p class="src">臺灣士林地方法院 114 年度消字第 14 號，判決日 115 年 6 月 24 日</p>
+        <div class="links">
+          <a href="https://lawplayer.com/judgment/SLDV,114,%E6%B6%88,14,20260624,1_b23035a9cb60ff3139ca823f9f7caa518a084a60" target="_blank" rel="noopener"><span class="t">士林地院 114 年度消字第 14 號判決書</span><span class="s">司法院裁判書整理（轉載）　2026-06-24</span></a>
+        </div>
+      </div>
+    </details>
+
+    <details class="fold">
+      <summary><span class="tag">保險代位</span><span class="ttl">聲寶冷氣起火，產品責任險先賠 246 萬餘元，保險公司再向製造商代位求償</span></summary>
+      <div class="body">
+        <p>108 年底，交通部中央氣象局新屋氣象站購入聲寶售出之變頻吊掛隱藏式冷氣，109 年 1 月 1 日發生火災。該機由國立股份有限公司製造、聲寶採購。聲寶投有產品責任險，由兆豐、華南、新安東京海上、明台、新光五家產險共保。保險公司依約理算並扣除自付額後，核定總賠款 246 萬 1,750 元。五家保險公司再依保險法第 53 條向製造商代位求償。臺北地院 111 年度消字第 2 號於 111 年 8 月 31 日判決，認定火災係冷氣故障所致，製造商應依民法第 191 條之 1 負賠，並命其依共保比例給付上開金額及利息。</p>
+        <p>教戰意義：這是最完整的「產責險先賠、再向上游代位」示範；也說明品牌商與製造商都可能被追償。</p>
+        <p class="src">臺灣臺北地方法院 111 年度消字第 2 號，判決日 111 年 8 月 31 日</p>
+        <div class="links">
+          <a href="https://lawplayer.com/judgment/TPDV,111,%E6%B6%88,2,20220831,1_5a3148e691de110ca262ff6cb5bcd2e5329eaf27" target="_blank" rel="noopener"><span class="t">臺北地院 111 年度消字第 2 號判決書</span><span class="s">司法院裁判書整理（轉載）　2022-08-31</span></a>
+        </div>
+      </div>
+    </details>
+
+    <details class="fold">
+      <summary><span class="tag">化粧品與兒童</span><span class="ttl">修護霜誤加雌激素，疑致幼童性早熟，業者回收並承諾賠償</span></summary>
+      <div class="body">
+        <p>111 年有醫師公開提醒，多名幼齡孩子因乳房隆起就醫，且都曾使用同款修護霜。誼辰佳國際實業有限公司聲明，「菁萃深效修護霜」因製造商生產流程疏失、誤用原料，致部分產品含不當成分，並回收 0538、1532、1533 等 3 個批號。食藥署表示雌激素為化粧品禁用成分，可依化粧品衛生安全管理法處分，並由桃園市衛生局調查。據中央社 111 年 10 月 29 日報導；至 TVBS 112 年 1 月 17 日報導，業者表示已追蹤近 30 位使用孩童，願意對醫藥費全額賠償。</p>
+        <p>教戰意義：化粧品無強制投保，但一旦傷害兒童，面對的是體傷賠償、商譽與大規模回收成本；基本產責險不賠回收費用。</p>
+        <p class="src">中央社 2022 年 10 月 29 日；TVBS 2023 年 1 月 17 日</p>
+        <div class="links">
+          <a href="https://www.cna.com.tw/news/ahel/202210290092.aspx" target="_blank" rel="noopener"><span class="t">修護霜含雌激素疑致幼童性早熟 業者回收 3 批號</span><span class="s">中央社　2022-10-29</span></a>
+          <a href="https://news.tvbs.com.tw/life/2020351" target="_blank" rel="noopener"><span class="t">修護霜害性早熟 業者：近 30 位全額賠償</span><span class="s">TVBS　2023-01-17</span></a>
+        </div>
+      </div>
+    </details>
+
+    <details class="fold">
+      <summary><span class="tag">國際案例</span><span class="ttl">高田 Takata 安全氣囊：隱瞞缺陷，美國和解 10 億美元</span></summary>
+      <div class="body">
+        <p>日本零件廠商高田因安全氣囊充氣器缺陷，進裂時金屬碎片可能射入車內。BBC 中文網 2017 年 1 月 14 日報導，高田承認一項刑事控罪，並同意在美國支付 10 億美元：罰款 2,500 萬美元、向受害人賠償 1.25 億美元、向車商賠償 8.5 億美元。當時報導指全球至少 12 人死亡、逾 100 人受傷，約 1 億個氣囊須回收。美國司法部指其系統性地篡改測試數據。</p>
+        <p>教戰意義：零件廠、上游從業者的缺陷，可以放大成全球性傷亡與召回；罰款與回收成本通常不在基本產品責任險範圍，對第三人體傷賠償才是主保單的核心。</p>
+        <p class="src">BBC News 中文 2017 年 1 月 14 日</p>
+        <div class="links">
+          <a href="https://www.bbc.com/zhongwen/trad/business-38621158" target="_blank" rel="noopener"><span class="t">高田因安全氣囊醜聞被罰十億美元</span><span class="s">BBC News 中文　2017-01-14</span></a>
+        </div>
+      </div>
+    </details>
+
+    <details class="fold">
+      <summary><span class="tag">國際案例</span><span class="ttl">三星 Galaxy Note7：電池起火燒傷，美國消安會公告召回</span></summary>
+      <div class="body">
+        <p>美國消費品安全委員會（CPSC）於 2016 年公告，三星召回 Galaxy Note7 智慧型手機，因電池有嚴重起火與燒傷危害。官方救濟為換貨、退款或換發其他機型。本頁不撰造和解或判決金額。</p>
+        <p>教戰意義：這是電子產品起火的經典國際案例；對消費者的體傷賠償與財損，才是產品責任險的主場；全球召回、換貨與禁帶上機的巨額成本，多須另安排回收險或相關附加條款。</p>
+        <p class="src">美國消費品安全委員會 CPSC 2016 年召回公告</p>
+        <div class="links">
+          <a href="https://www.cpsc.gov/Recalls/2016/Samsung-Recalls-Galaxy-Note7-Smartphones" target="_blank" rel="noopener"><span class="t">Samsung Recalls Galaxy Note7 Smartphones</span><span class="s">美國 CPSC　2016</span></a>
+        </div>
+      </div>
+    </details>
+    <p>上列民事判決書以司法院裁判書系統為準。若要讀官方正本，請至<a href="https://judgment.judicial.gov.tw/FJUD/default.aspx" target="_blank" rel="noopener">司法院裁判書查詢</a>，以案號搜尋。</p>
+  </section>
+
+  <section id="sales">
+    <h2><span class="no">9</span>業務實戰</h2>
+    <h3>適合推薦的客戶類型</h3>
+    <ol class="clean">
+      <li>必須先接：有登記的食品製造、加工、輸入及餐飲業者（含前店後廠麵包店）。保單到期、保額不足或尚未投保者，是最優先清單。</li>
+      <li>高風險產品：電器、充電設備、行動電源、兒童用品、化粧品、保健食品、母嬰用品。</li>
+      <li>進出口商、品牌商、貼牌與代工者；外銷，優先對照買家合約對保額與地區的要求。</li>
+      <li>電商賣家、直播與社群零售、代購：可能具經銷或輸入身分，且易被連帶請求。</li>
+      <li>已有公責險的餐廳、超商、百貨專櫃：檢查食物中毒與產品缺陷是否真正有保到。</li>
+      <li>通路、外送平台或招標案要求「必須附產品責任險證明」的廠商。</li>
+    </ol>
+
+    <h3>開場話術</h3>
+    <blockquote class="quote"><span class="who">對食品、餐飲客戶</span>「林老闆，食藥署規定，有登記的食品製造、輸入和餐飲業要投保產品責任險，最低每人 100 萬、每事故 400 萬、年累計 1,000 萬。這不是要嚇你，是衛生局查到未投保，可能被罰 3 萬到 300 萬。我先幫你看現在的保單有沒有到期、保額有沒有達標；也建議一起看，一旦發生食物中毒，這個底線夠不夠。」</blockquote>
+    <blockquote class="quote"><span class="who">對已有公責險的餐廳</span>「你之前投的公共意外責任險，主要保客人在店裡跌倒、被設備碰到。若是吃了你的菜中毒，或外帶回家後才發病，多數情況要看產品責任險，不能默認公責險一定會賠。我可以幫你把現在的條款和法定最低保額對一次。」</blockquote>
+    <blockquote class="quote"><span class="who">對製造商、進口商、電商</span>「消保法對製造商和進口商採無過失責任。產品如果傷到人、燒掉家裡，消費者不用先證明你有過失，你就可能要賠。這張保的不是退換貨，是你要賠給對方的醫療費、修繕費和訴訟費用。我先了解你賣什麼、賣哪裡、年營業額大概多少，再幫你估該保多少。」</blockquote>
+    <blockquote class="quote"><span class="who">對外銷廠商</span>「若買家合約要求附產品責任險證明，先把合約對保額、地區和是否含美加的條件給我。國內保單跟出口到美加的保單，承保條件差很多，不能拿國內保單去塞合約。」</blockquote>
+
+    <h3>常見問答</h3>
+    <details class="fold">
+      <summary><span class="ttl">Q：產品壞掉、客人要退貨，會賠嗎？</span></summary>
+      <div class="body"><p>A：不會。基本產品責任險不保產品本身損失、退換貨或回收費用。要處理召回成本，需另議產品回收險或附加條款。</p></div>
+    </details>
+    <details class="fold">
+      <summary><span class="ttl">Q：我已經有公共意外責任險了？</span></summary>
+      <div class="body"><p>A：兩張保的事不一樣。公責險保場所意外，產責險保產品缺陷。餐飲業要逐張核對現有保單是否真正符合食藥署最低保額與範圍，別假設「有公責就夠了」。</p></div>
+    </details>
+    <details class="fold">
+      <summary><span class="ttl">Q：食品業一定要保嗎？只賣不製呢？</span></summary>
+      <div class="body"><p>A：符合公告規模的製造、加工、輸入及餐飲業者必須投保。官方 QA 指，只販賣、無製造或輸入行為者目前不在強制名單內；但仍可能依消保法被求償。</p></div>
+    </details>
+    <details class="fold">
+      <summary><span class="ttl">Q：保費會不會很貴？</span></summary>
+      <div class="body"><p>A：保費多依預計銷售金額、產品風險、銷售地區與保額議定，期滿後再依實際銷售額結算，且有最低保費。我不能當場開一個確定價格，要先收集產品與營業資料後，交公司核保報價。</p></div>
+    </details>
+    <details class="fold">
+      <summary><span class="ttl">Q：懲罰性賠償金有賠嗎？</span></summary>
+      <div class="body"><p>A：示範條款原則不賠，除非書面加保。消保法第 51 條的請求，也要消費者另證故意或過失。</p></div>
+    </details>
+    <details class="fold">
+      <summary><span class="ttl">Q：外銷到美加，國內保單夠不夠？</span></summary>
+      <div class="body"><p>A：通常不夠。要確認承保地區、準據法是否含美加，以及買家對保額與證明的要求。</p></div>
+    </details>
+    <details class="fold">
+      <summary><span class="ttl">Q：換保險公司時要注意什麼？</span></summary>
+      <div class="body"><p>A：先問追溯日能不能與舊保單銜接。這張多數是賠償請求制，追溯日被後移或保單中斷，容易出現保障空白。</p></div>
+    </details>
+    <details class="fold">
+      <summary><span class="ttl">Q：化粧品一定要保嗎？</span></summary>
+      <div class="body"><p>A：目前法律未見僅對化粧品強制投保產品責任險。但一旦出現過敏、斑或兒童受害，賠償和商譽損失都可能很大，建議依風險投保。</p></div>
+    </details>
+
+    <h3>投保前要問客戶的問題清單</h3>
+    <ol class="steps">
+      <li><div><p class="st">企業角色</p><p class="sd">是製造、加工、輸入、經銷、品牌、餐飲、電商，還是委託／受託代工？誰是投保人？</p></div></li>
+      <li><div><p class="st">產品明細</p><p class="sd">產品名稱、用途、原料、是否食品、化粧品、兒童用品、電器或醫療相關；有沒有包裝、說明書與警語。</p></div></li>
+      <li><div><p class="st">銷售與地區</p><p class="sd">年營業額或預計銷售金額；國內或出口；是否含美國、加拿大或歐洲。</p></div></li>
+      <li><div><p class="st">現有保障</p><p class="sd">是否已有產品責任險、公責險、回收險；到期日、保額、追溯日、自負額與承保地區。</p></div></li>
+      <li><div><p class="st">合約與通路要求</p><p class="sd">買家、電商平台或招標是否要求指定保額、附加被保險人或保單證明。</p></div></li>
+      <li><div><p class="st">過往紀錄</p><p class="sd">近幾年有沒有客訴、中毒、起火、召回或理賠？要據實告知。</p></div></li>
+      <li><div><p class="st">保額需求</p><p class="sd">是否屬強制投保對象；除最低保額外，是否要加高體傷、財損或累計額度。</p></div></li>
+      <li><div><p class="st">文件準備</p><p class="sd">營業登記、產品清單、說明書、認證、跨國保單（若有）及買家要求文件。</p></div></li>
+    </ol>
+    <div class="callout">
+      <p class="k">理賠時要提醒客戶</p>
+      <p style="margin:0">知悉事故後應立即通知保險公司；儘量保留商品本體，不要急著丟掉或私自修復；收到請求書、傳票或訴狀要轉交公司；除必要急救外，不要未經公司同意就自行承諾賠償或和解。</p>
+    </div>
+  </section>
+
+  <section id="sources">
+    <h2><span class="no">10</span>出處與備註</h2>
+    <p class="lead">以下為本頁主要法規與公開資訊來源。案例出處見上一節各卡片內的連結。</p>
+    <div class="links">
+      <a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=7&pcode=J0170001" target="_blank" rel="noopener"><span class="t">消費者保護法第 7 條</span><span class="s">全國法規資料庫</span></a>
+      <a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=8&pcode=J0170001" target="_blank" rel="noopener"><span class="t">消費者保護法第 8 條</span><span class="s">全國法規資料庫</span></a>
+      <a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=9&pcode=J0170001" target="_blank" rel="noopener"><span class="t">消費者保護法第 9 條</span><span class="s">全國法規資料庫</span></a>
+      <a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=51&pcode=J0170001" target="_blank" rel="noopener"><span class="t">消費者保護法第 51 條</span><span class="s">全國法規資料庫</span></a>
+      <a href="https://mojlaw.moj.gov.tw/LawContentExtent.aspx?LawNo=191-1&lsid=FL001351" target="_blank" rel="noopener"><span class="t">民法第 191 條之 1</span><span class="s">法務部法規系統</span></a>
+      <a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=13&pcode=L0040001" target="_blank" rel="noopener"><span class="t">食品安全衛生管理法第 13 條</span><span class="s">全國法規資料庫</span></a>
+      <a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=47&pcode=L0040001" target="_blank" rel="noopener"><span class="t">食品安全衛生管理法第 47 條</span><span class="s">全國法規資料庫</span></a>
+      <a href="https://www.fda.gov.tw/tc/newscontent.aspx?id=27328" target="_blank" rel="noopener"><span class="t">公告修正「食品業者投保產品責任保險」</span><span class="s">食品藥物管理署　2021-09-28</span></a>
+      <a href="https://www.mohw.gov.tw/dl-71913-e353cb8d-8637-45da-868e-0f5a8210fec1.html" target="_blank" rel="noopener"><span class="t">食品業者投保產品責任保險（公告文本）</span><span class="s">衛生福利部</span></a>
+      <a href="https://www.mohw.gov.tw/dl-71911-e9bd9ee3-c7b0-4925-b133-314a0a0e1d93.html" target="_blank" rel="noopener"><span class="t">「食品業者投保產品責任保險」QA 問答集</span><span class="s">衛生福利部</span></a>
+      <a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?PCode=L0030013" target="_blank" rel="noopener"><span class="t">化粧品衛生安全管理法</span><span class="s">全國法規資料庫</span></a>
+      <a href="https://www.cna.com.tw/news/afe/202607090374.aspx" target="_blank" rel="noopener"><span class="t">金管會：產品責任險不賠退貨</span><span class="s">中央社　2026-07-09</span></a>
+      <a href="https://judgment.judicial.gov.tw/FJUD/default.aspx" target="_blank" rel="noopener"><span class="t">司法院裁判書查詢</span><span class="s">司法院</span></a>
+    </div>
+    <div class="callout">
+      <p class="k">整理界線與限制</p>
+      <p style="margin:0">資料整理日期為 2026 年 11 月 18 日（臺灣時間，Asia/Taipei）。本頁未撰造費率；也未在富邦產險官網找到可直接下載的官方要保書。寶林茶室案的民事和解金額未見全數公開；行動電源案二審當時仍得上訴，本頁未另外查證是否有更審變更。化粧品未見法定強制投保產品責任險，但若主管機關後續改制，請以最新公告為準。實際承保與理賠，一律以當年保單條款與公司核保為準。</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="card">本頁為自學與對客說明整理，非富邦產險官方網站，亦非保險契約的一部分。</div>
+  </div>
+</footer>
+<script>
+(function(){
+  const links=[...document.querySelectorAll("nav.toc a")];
+  const secs=links.map(a=>document.querySelector(a.getAttribute("href"))).filter(Boolean);
+  const io=new IntersectionObserver((ents)=>{
+    const vis=ents.filter(e=>e.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];
+    if(!vis) return;
+    const id="#"+vis.target.id;
+    links.forEach(a=>{
+      const on=a.getAttribute("href")===id;
+      a.classList.toggle("on",on);
+      if(on) a.setAttribute("aria-current","true"); else a.removeAttribute("aria-current");
+    });
+  },{rootMargin:"-20% 0px -70% 0px",threshold:[0,.25,.5,1]});
+  secs.forEach(s=>io.observe(s));
+  links.forEach(a=>a.addEventListener("click",()=>{
+    links.forEach(x=>{x.classList.remove("on");x.removeAttribute("aria-current")});
+    a.classList.add("on");a.setAttribute("aria-current","true");
+  }));
+})();
+</script>
+</body>
+</html>
